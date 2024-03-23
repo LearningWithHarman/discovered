@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="styles1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito:ital,wght@0,1000;1,1000&family=Poltawski+Nowy:ital,wght@0,666;1,666&family=Rubik+Mono+One&family=Suez+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.conatainer {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.conatainer li {
+  display: inline-block;
+  margin-right: 19px;
+  font-family: "Suez One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 29px;
+  color: white;
+}
+
+nav {
+  top: 0;
+  background-color: black;
+  width: 100%;
+  height: 82px;
+  box-shadow: 0 9px 8px rgba(0, 0, 0,0.4);
+}
+
+.conatainer {
+  margin: 12px 12px;
+  padding: 12px 12px;
+}
+
+.conatainer p {
+  font-family: "Suez One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 29px;
+  color: white;
+}
+
+.conatainer i {
+  padding-top: 9px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  display: none;
+}
+
+#demo {
+  display: none;
+}
+.conatainer ul{
+  /* position: relative; */
+  left:-600%;
+  transition: left 0.3s ease-in-out;
+}
+#demo{
+  cursor: pointer;
+}
+.just{
+  cursor:pointer;
+}
+@media only screen and (max-width: 800px) {
+
+  .conatainer li {
+    color: red;
+  }
+
+  .conatainer ul li {
+    display: block;
+    padding: 12px 12px;
+
+  }
+
+  .conatainer li:hover {
+    color: rgb(0, 0, 0);
+    background-color: blanchedalmond;
+  }
+
+  .conatainer ul {
+    position: fixed;
+    margin-top: 10%;
+    text-align: center;
+    margin-left: -8%;
+    background-color: black;
+    width: 110%;
+    height: 100vh;
+
+  }
+
+  .conatainer i {
+    display: block;
+  }
+
+  #demo {
+    display: block;
+    margin-left: 72%;
+  }
+}
+    </style>
+</head>
+
+<body>
+  <nav>
+    <div class="conatainer">
+      <p>Brand</p>
+      <i class="fa-solid fa-bars just" onclick="fire()" ></i>
+
+      <ul id="ok">
+        <li id="demo" onclick="fire2()">close</li>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Phone</li>
+        <li>Sales</li>
+        <li>View</li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    function fire() {
+      document.getElementById('ok').style.left = '0%';
+    }
+    function fire2() {
+      document.getElementById('ok').style.left = '-600%';
+    }
+  </script>
+</body>
+
+</html>
