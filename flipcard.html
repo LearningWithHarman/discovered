@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ;
+  /* perspective: 1000px; */
+}
+.card{
+  perspective: 1000px;
+}
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.wrapper:hover .front {
+  transform: rotateY(-180deg);
+}
+
+
+.image,
+.image1 {
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  text-align: center;
+}
+
+.back ul {
+  list-style: none;
+  padding: 0;
+}
+
+.back li {
+  display: inline-block;
+  padding-right: 12px;
+}
+
+.wrapper:hover {
+  transform: rotateY(180deg);
+}
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="wrapper">
+        <div class="front">
+        <img src="./flip card.jpg" class="image">
+        </div>
+        <div class="back">
+        <img src="./flip card.jpg" class="image1">
+        <h3>flip card</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <ul>
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-reddit-alien"></i></li>
+        </ul>
+        
+        
+        </div>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>
