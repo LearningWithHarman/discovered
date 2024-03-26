@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="23_style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.fomrat {
+  display: flex;
+  gap: 2px;
+
+}
+
+nav {
+  margin-top: 24px;
+  padding: 23px 12px;
+  box-shadow: 0px 3px 4px black;
+  margin-left: 12px;
+  width: 31%;
+
+}
+
+nav li {
+  list-style: none;
+  padding: 12px 4px;
+
+}
+
+nav li:hover {
+  box-shadow: 0px 3px 4px black;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  box-shadow: 0px 3px 9px black;
+  padding: 90px 12px;
+  margin-top: 12px;
+}
+
+footer li {
+  display: inline-block;
+  padding-right: 12px;
+}
+
+section {
+  padding: 23px 12px;
+}
+
+section div {
+  padding: 15px 12px;
+}
+
+.first-container {
+  box-shadow: 0px 3px 4px black;
+  padding: 63px 0px;
+}
+
+.second-container {
+  box-shadow: 0px 3px 4px black;
+  margin-top: 12px;
+  padding: 63px 0px;
+}
+
+button {
+  padding: 4px 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .fomrat {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  nav {
+    width: 88%
+  }
+
+  footer {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+}
+  </style>
+</head>
+
+<body>
+  <div class="fomrat">
+    <nav>
+      <ul>
+        <li>Designer</li>
+        <li>London, Uk</li>
+        <li>ex@mail.com</li>
+        <li>1224435534</li>
+      </ul>
+      <div>
+        <h2>Skills</h2>
+        <ul>
+          <li>Adobe Photoshop</li>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+          <li>Media</li>
+        </ul>
+      </div>
+      <ul>
+        <h2>Languages</h2>
+        <ul>
+          <li>English</li>
+          <li>Spanish</li>
+          <li>German</li>
+        </ul>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="first-container">
+
+        <div>
+          <h2>work Experience</h2>
+          <p>Front End Developer /w3schools.com</p>
+          <p>Jan 2015-<button>Current</button></p>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
+            sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+        </div>
+
+        <div>
+          <h2>Web Developer /Something.com</h2>
+          <p>Mar 2012-Dec 2014 </p>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
+            sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+        </div>
+        <div>
+          <h2>Graphic Designer/designsomething.com</h2>
+          <p>Jun 2010-Mar 2012</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+      </div>
+
+
+      <div class="second-container">
+        <div>
+          <h2>Education</h2>
+        </div>
+        <div>
+          <h2>W3schools.com</h2>
+          <p>forever</p>
+          <p>Web Development! All I need to know in one place</p>
+        </div>
+
+        <div>
+          <h1>London Business School</h1>
+          <p>2013 - 2015</p>
+          <p>Master Degree</p>
+        </div>
+
+        <div>
+          <h1>School of Coding</h1>
+          <p>2010 - 2013</p>
+          <p>Bechelor Degree</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Find me on social media.</p>
+    <ul>
+      <li><i class="fab fa-facebook"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-reddit-alien"></i></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
